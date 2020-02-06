@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Marcos Meier</title>
+        <title>Daarna - Arquitetura e Interiores</title>
 
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
@@ -19,10 +19,6 @@
 
     <body>
         <header>
-            <div class="topo hidden-xs">
-                <div class="container">
-                    <h4><i class="fa fa-whatsapp" aria-hidden="true"></i> 41 99248.3040 <span>- 41 3107.6448 - meierpalestras@gmail.com</span></h4>
-                </div><!-- containe -->
-            </div><!-- topo -->
+            <a href="" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-daarna.png" alt=""></a>
             <?php include 'components/menu.php'; ?>
         </header>

@@ -17,6 +17,9 @@
 		        		echo "<a href='{$titulo_vitrine}'><img src='{$vitrine['url']}' alt='{$vitrine['alt']}' /></a>";
 		        	}
 	        	?>
+	        	<div class="conteudo">
+	        		<h1><?= $titulo_vitrine ?></h1>
+	        	</div><!-- conteudo -->
 			</div><!-- item -->
 		<?php endforeach; ?>
     </div><!-- owl-carousel -->
