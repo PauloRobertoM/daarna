@@ -13,6 +13,7 @@
         <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css' type='text/css' />
         <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/hover-min.css' type='text/css' />
         <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css' type='text/css' />
+        <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/lightbox.min.css' type='text/css' />
         <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/assets/css/style.css' type='text/css' />
         <?php wp_head(); ?>
     </head>
