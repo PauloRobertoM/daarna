@@ -6,6 +6,8 @@ require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR .
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Sobres.php';
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Equipes.php';
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Projetos.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Antes.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Depoimentos.php';
 
 $Bootstrap = new Bootstrap;
 $Contato = new Contato;
@@ -13,6 +15,8 @@ $Vitrines = new Vitrines;
 $Sobres = new Sobres;
 $Equipes = new Equipes;
 $Projetos = new Projetos;
+$Antes = new Antes;
+$Depoimentos = new Depoimentos;
 
 function new_excerpt_length($length) {
    return 999999999;

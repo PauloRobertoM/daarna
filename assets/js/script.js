@@ -1,10 +1,64 @@
 (function($, window) {
+    $(document).ready(function($){
+        $('.scroll').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            $('#menu-toggle').removeClass('tb-active-toggle tb-animate-toggle');
+            $('#menu').hide('slow');
+        });
+    });
+
+    var stickyHeader = jQuery('.navbar-fixed-top');
+    jQuery(window).scroll(function() {
+        if( stickyHeader.offset().top > 100 ) {
+            stickyHeader.addClass('sticky')
+        } else {
+            stickyHeader.removeClass('sticky')
+        }
+    });
+
     $('.owl-vitrine').owlCarousel({
         loop: true,
         autoplay: true,
         margin: 0,
         nav: false,
         dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+    $('.owl-antes').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+    $('.owl-depoimentos').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        nav: false,
+        dots: true,
         responsive:{
             0:{
                 items:1
@@ -96,4 +150,25 @@
         }
     }();
     Accordion.init();
+
+    $("#todos").on('click', function(){
+        $('.category-1').show('slow');
+        $('.category-2').show('slow');
+        $('.category-3').show('slow');
+    });
+    $("#cat-arquitetura").on('click', function(){
+        $('.category-1').show('slow');
+        $('.category-2').hide('slow');
+        $('.category-3').hide('slow');
+    });
+    $("#cat-interiores").on('click', function(){
+        $('.category-1').hide('slow');
+        $('.category-2').show('slow');
+        $('.category-3').hide('slow');
+    });
+    $("#cat-comercial").on('click', function(){
+        $('.category-1').hide('slow');
+        $('.category-2').hide('slow');
+        $('.category-3').show('slow');
+    });
 })(jQuery, window);
